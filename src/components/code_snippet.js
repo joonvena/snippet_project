@@ -13,9 +13,7 @@ class code_snippet extends Component {
 
 
     render() {
-        console.log(this.props.searchparams)
     return _.map(this.props.snippets, snippet => {
-        snippet = _.filter(this.props.snippets, snippet => snippet.title.includes(this.props.search.toLowerCase()));
         return (
             <div key={snippet.id}>
                             <Col xs={12} sm={4} className="code_snippets">

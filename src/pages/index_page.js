@@ -37,6 +37,37 @@ class index_page extends Component {
      * @desc This component renders frontpage
      */
 
+    renderSnippets() {
+       
+        return this.state.currentlyDisplayed.map((snippet) => {
+            return (
+                <div key={snippet.id}>
+                <Col xs={12} sm={4} className="code_snippets">
+                <Panel>
+                <Panel.Heading>
+                <Panel.Title componentClass="h3">{snippet.title}</Panel.Title>
+                </Panel.Heading>
+                <Panel.Body>
+                    
+                    <pre>
+                    <code>
+                    {snippet.code}
+                    </code>
+                    </pre>
+                    <h5>
+                    <Label>
+                    {snippet.tags}
+                    </Label>
+                    </h5>
+                    
+                </Panel.Body>
+                </Panel>
+                </Col>                          
+      </div>
+            )
+        });
+    }
+
     render() {
         console.log('debuggg')
         console.log(this.state.currentlyDisplayed.length)
@@ -63,9 +94,7 @@ class index_page extends Component {
 
                         </Col>
                         <Col xs={12} sm={12}>
-                
-                        <CodeSnippets searchparams={this.state.value} />
-
+                        {this.renderSnippets()}
                         </Col>
                     </Row>
 

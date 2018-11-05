@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import { Field, reduxForm } from 'redux-form';
-import { Link, withRouter } from 'react-router-dom';
+import { withRouter } from 'react-router-dom';
 import { Panel } from 'react-bootstrap';
 import { connect } from 'react-redux';
 import { postSnippet } from '../actions/index';
