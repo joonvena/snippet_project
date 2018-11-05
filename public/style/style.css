@@ -1,0 +1,26 @@
+body {
+    background-color: #485b7a !important;
+}
+
+.title {
+    font-family: 'Pattaya', sans-serif;
+    padding: 15px 0px 15px 0px;
+    font-size: 60px;
+    color: #FFF;
+}
+
+.header_element {
+    background-color: #37465e !important;
+}
+
+.search_form {
+    text-decoration: none !important;
+    border: 0 !important;
+    background-color: #37465e !important;
+    color: #FFF !important;
+    margin-top: 10px;
+    margin-bottom: 20px;
+    padding-top: 30px !important;
+    padding-bottom: 30px !important;
+    font-size: 20px !important;
+}
